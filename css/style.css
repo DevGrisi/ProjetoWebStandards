@@ -156,3 +156,30 @@ input[type="text"]:hover::placeholder, input[type="password"]:hover::placeholder
     background-color: #212873;
     border-color: #212873;
 }
+
+#content
+{
+    width: 50vh;
+    height: 80vh;
+    border: 1px  black;
+    border-radius: 10px;
+    background-color: rgb(119,120,245);
+    background: linear-gradient(180deg, rgba(119,120,245,1) 0%, rgba(170,56,225,1)100%);
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0, 0.75);
+}
+#content p
+{
+    text-align: left;
+    color: #fff;
+    margin: 5px 2vh auto;
+}
+#content .inputsBase
+{
+    width: 90%;
+    margin: 0vh auto;
+    height: 25px;
+}
+#content .grupoCEP
+{
+    
+}
