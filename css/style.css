@@ -118,7 +118,7 @@ nav img
     border-radius: 51%;    
 }
 
-input[type="text"], input[type="password"]
+input[type="text"], input[type="password"], input[type="number"]
 {
     font-family: "Poppins-Regular";
     color: #000;
@@ -131,6 +131,18 @@ input[type="text"], input[type="password"]
     border: 1px solid #fff;
     text-align: center;
     height: 45px;
+    text-decoration: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button
+{
+    -webkit-appearance: none;
+}
+
+input[type="number"]
+{
+    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 input[type="text"]:hover, input[type="password"]:hover
