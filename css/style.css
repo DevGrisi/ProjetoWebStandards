@@ -82,6 +82,10 @@ nav img
 .inputVisorCalculadora
 {
     width: 86% !important;
+    text-align: right !important;
+    font-size: xx-large !important;
+    color: #fff !important;
+    
 }
 
 /*  FIM     */
@@ -273,8 +277,9 @@ input[type="text"]:hover::placeholder, input[type="password"]:hover::placeholder
     border-color: #84afff;
 }
 /*  FIM    */
-.imagemCEPcorreios
+.imagemCEPcorreios, .imagemCEPviaCEP
 {
     height: 109px;
     width: 389px;
+    opacity: 1;
 }
