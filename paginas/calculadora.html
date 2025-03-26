@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="../assets/fontawesome/css/all.min.css">
     <title>Index | Projeto Web Standards</title>
 </head>
-<body onload="carregar()">
+<body onload="limparALL()">
     <div id="cssMenu">
         <ul>
             <li><span><a href="principal.html">Home</a></span></li>
@@ -61,8 +61,8 @@
             </div>
 
             <div class="grupoBotoesCalculadora">
-                <input class="botaoCalculadora" type="button" value="=" >
-                <input class="botaoCalculadora" type="button" value="CE" onclick="limpar()">
+                <input class="botaoCalculadora" type="button" value="=" onclick="calcular()">
+                <input class="botaoCalculadora" type="button" value="CE" onclick="limparALL()">
                 <input class="botaoCalculadora" type="button" value="0" onclick="num0()">
                 <input class="botaoCalculadora" type="button" value="*" onclick="multiplicacao()">
            </div>
