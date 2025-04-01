@@ -32,7 +32,7 @@ function buscaCEPFetch()
         })
         .then((result) => 
         {
-            document.getElementsByClassName("endereco")[0].value = result.logradouro || "";     //Previne que o programa quebre se não houver 
+            document.getElementsByClassName("endereco")[0].value = result.logradouro || "";      //Previne que o programa quebre se não houver 
             document.getElementsByClassName("complemento")[0].value = result.complemento || ""; // alguma informação deixando o campo como vazio
             document.getElementsByClassName("bairro")[0].value = result.bairro || "";
             document.getElementsByClassName("cidade")[0].value = result.localidade || "";
@@ -98,3 +98,26 @@ function buscaCEP()
     }
     xhr.send();
 }
+
+document.getElementsByClassName("CEP")[0].addEventListener('change',function()
+{
+    document.getElementById("loading").style.display = "block"  //Vai até o elemento 'loading' no Style dele na propriedade 'display' atribui um novo valor.
+    //hideOrshowLoad("show")                                   // Fazendo-o aparecer na tela
+    buscaCEPFetch();
+
+    setTimeout(function()
+    {
+        ///hideOrshowLoad("hide")
+        document.getElementById("loading").style.display = "none"
+    }, 1000)
+})
+
+/*
+function hideOrshowLoad(tipo)
+{
+    if (tipo == "hide")
+        document.getElementById("loading").style.display = "none"
+    else
+        document.getElementById("loading").style.display = "block"
+}
+*/

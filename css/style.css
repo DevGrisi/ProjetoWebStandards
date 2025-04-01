@@ -283,3 +283,32 @@ input[type="text"]:hover::placeholder, input[type="password"]:hover::placeholder
     width: 389px;
     opacity: 1;
 }
+
+/*  CONTENT   -   LOADING   || CONTEUDO  -  CARREGANDO*/
+
+#loading
+{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: #333333;
+    opacity: 0.85;
+}
+
+#loading img
+{
+    max-width: 16vh; /*Significa que o 'widht' pode ser menor que o valor especificado mas NUNCA MAIOR*/
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#loading p
+{
+    text-align: center;
+    color: #ffffff;
+}
+/*  FIM  -  CONTENT  -  LOADING*/
